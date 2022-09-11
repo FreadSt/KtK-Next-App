@@ -1,0 +1,173 @@
+.container{
+    display: flex;
+    font-family: 'Raleway', sans-serif;
+    margin: 10px;
+    width: 100%;
+    justify-content: center;
+    div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .body-poster{
+            max-width: 100%;
+            position: relative;
+            margin-bottom: -70px;
+        }
+        form{
+            width: 350px;
+            margin-right: 15px;
+            align-self: center;
+            align-items: center;
+            .links{
+                display: flex;
+                justify-content: space-evenly;
+                a{
+                    color: black;
+                    text-decoration: none;
+                }:hover{
+                    text-decoration: underline;
+                    color: #379AD8;
+                }
+            }
+            div{
+                display: block;
+                margin: 20px;
+                text-align: start;
+                label{
+                    font-weight: 600;
+                    text-decoration: none;
+                }
+                input{
+                    font-weight: 400;
+                    font-family: 'Raleway' sans-serif;
+                    font-size: 16px;
+                    width: 290px;
+                    height: 40px;
+                    border: 1px solid #D9D9D9;
+                    border-radius: 4px;
+                    margin-top: 15px;
+                    text-indent: 10px;
+
+                    
+                }:focus::placeholder{
+                    color:transparent;
+                }::placeholder{
+                    color: #c3c3c3;
+                    font-family: 'Raleway' sans-serif;
+                }
+            }
+            .note{
+                display: flex;
+                align-items: center;
+                margin-right: 40px;
+                img{
+                    height: 2px;
+                    width: 70px;
+                }
+                p{
+                    width: 131px;
+                    font-size: 18px;
+                    margin: 0 5px;
+                }
+            }
+            button{
+                width: 290px;
+                height: 40px;
+                background: #379AD8;
+                border-radius: 20px;
+                border: none;
+                cursor: pointer;
+                margin-right: 18px;
+                p{
+                    align-self: center;
+                    font-family: 'Raleway' sans-serif;
+                    font-weight: 400;
+                    color: white;
+                    font-size: 18px;
+                }
+            }
+            .social-logo{
+                display: flex;
+                justify-content:center;
+                flex-wrap: wrap;
+                margin-right: 35px;
+                img{
+                    margin: 15px;
+                    cursor: pointer;
+                }
+            }
+            .privacy-policy{
+                display: flex;
+                justify-content: center;
+                a{
+                    font-weight: 400;
+                    font-size: 12px;
+                    text-decoration: none;
+                }:hover{
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+
+/* Footer */
+
+.footer{
+    background: #4E4E4E;
+    max-width: 1920px;
+    width: 100%;
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;   
+    .stats{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 60px 50px 0px 50px;
+        div{
+            text-align: center;
+            padding: 30px;
+            h2{
+                width: 220px;
+                color: #ffffff;
+                font-size: 32px;
+            }
+            p{
+                color: #ffffff;
+                font-size: 24px;
+                width: 220px;
+            }
+        }
+    }
+    hr{
+        width: 90%;
+        align-self: center;
+    }
+    .footer-social{
+        display: flex;
+        flex-direction: column;
+        height: 200px;
+        span{
+            margin-top: 40px ;
+            font-size: 24px;
+            color: #ffffff;
+        }
+        div{
+            
+        }
+    }
+    .bottom-line{
+        margin-bottom: 10px;
+    }
+}
+
+@media(max-width: 1920px){
+    .body-poster{
+        width: 900px;
+    }
+}
